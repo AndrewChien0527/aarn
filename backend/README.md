@@ -37,3 +37,11 @@ uvicorn app.main:app --reload --port 8000
 - I can also generate the `admin-ui/` Streamlit app files that call this backend.
 - I can flesh out any file further (e.g. implement robust LLM prompt templates, add PDF parsing helpers, add Alembic migrations, or add unit tests).
 ```
+
+# setting environmet
+
+setx S2_API_KEY "你的真正 API KEY"
+echo $env:S2_API_KEY
+
+or simply
+$env:S2_API_KEY="your api key"
